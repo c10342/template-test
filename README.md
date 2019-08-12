@@ -1,2 +1,22 @@
-# template-test
-脚手架测试模板
+# lin-cli
+
+## 说明
+基于webpack4的脚手架
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run dev
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+
+### Customize configuration

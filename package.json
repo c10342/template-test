@@ -1,20 +1,51 @@
 {
-  "name": "cli",
+  "name": "demo",
   "version": "1.0.0",
-  "description": "{{description}}",
+  "sideEffects": [
+    "*.css",
+    "*.less"
+  ],
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.prod.js"
   },
   "keywords": [],
-  "author": "{{author}}",
+  "author": "",
   "license": "ISC",
-  "bin": {
-    "cli": "index.js"
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime-corejs2": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "glob-all": "^3.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "commander": "^2.20.0",
-    "download-git-repo": "^2.0.0",
-    "inquirer": "^6.5.0"
+    "@babel/polyfill": "^7.4.4",
+    "@babel/runtime": "^7.5.5",
+    "core-js": "^3.2.0"
   }
 }
